@@ -1,17 +1,23 @@
 export default {
   global: {
-    componenteFormativo: 'NOMBRE DEL COMPONENTE FORMATIVO',
-    descripcionCurso: 'BREVE DESCRIPCIÓN',
-    imagenBannerPrincipal: require('@/assets/curso/portada/banner-princiapal.svg'),
+    componenteFormativo:
+      'Análisis estructural y funcional de un microcontrolador',
+    descripcionCurso:
+      'El proceso de creación de un programa para microcontroladores incluye redactar instrucciones en lenguaje de programación, compilar el código y realizar el enlazado. Luego, el programa se simula para verificar su funcionamiento antes de quemar el <em>firmware</em> en la memoria del microcontrolador. Finalmente, se realizan pruebas en <em>hardware</em> y <em>software</em> para asegurar su correcto desempeño.',
+    imagenBannerPrincipal: require('@/assets/curso/portada/banner-principal.png'),
     fondoBannerPrincipal: require('@/assets/curso/portada/fondo-banner-principal.png'),
     imagenesDecorativasBanner: [
       {
         clases: ['banner-principal-decorativo-1', 'd-none', 'd-lg-block'],
-        imagen: require('@/assets/curso/portada/banner-principal-decorativo-1.svg'),
+        imagen: require('@/assets/curso/portada/banner-principal-decorativo-1.png'),
       },
       {
         clases: ['banner-principal-decorativo-2'],
-        imagen: require('@/assets/curso/portada/banner-principal-decorativo-2.svg'),
+        imagen: require('@/assets/curso/portada/banner-principal-decorativo-2.png'),
+      },
+      {
+        clases: ['banner-principal-decorativo-3'],
+        imagen: require('@/assets/curso/portada/banner-principal-decorativo-3.png'),
       },
     ],
   },
@@ -31,27 +37,20 @@ export default {
       {
         nombreRuta: 'tema1',
         numero: '1',
-        titulo: 'Titulo de primer nivel',
+        titulo: 'Estructura básica de los microcontroladores',
         desarrolloContenidos: true,
-        subMenu: [
-          {
-            numero: '1.1',
-            titulo: 'Titulo de segundo nivel',
-            hash: 't_1_1',
-          },
-        ],
       },
-
       {
         nombreRuta: 'tema2',
         numero: '2',
-        titulo: 'Titulo de primer nivel',
+        titulo: 'Lenguaje de programación',
         desarrolloContenidos: true,
       },
       {
         nombreRuta: 'tema3',
         numero: '3',
-        titulo: 'Titulo de primer nivel',
+        titulo:
+          'Estructura del proceso de creación de un programa para microcontroladores',
         desarrolloContenidos: true,
       },
     ],
@@ -102,31 +101,113 @@ export default {
   },
   complementario: [
     {
-      tema: '',
-      referencia: '',
-      tipo: '',
-      link: 'https://www.google.com/',
+      tema: 'Estructura básica de los microcontroladores ',
+      referencia:
+        'Delgado Miguel Angel. (2020). Estructura interna del microcontrolador. [Archivo de video] Youtube. ',
+      tipo: 'Video',
+      link:
+        'https://www.youtube.com/watch?v=glLbD1aqJKo&ab_channel=DelgadoMiguelAngel  ',
     },
     {
-      tema: '',
-      referencia: '',
-      tipo: '',
-      descarga: '/downloads/prueba.pdf',
+      tema: 'Lenguaje de programación ',
+      referencia:
+        'Coding Academy Perú. (2020). Assembler - Lo básico del lenguaje. [Archivo de video] Youtube.   ',
+      tipo: 'Video',
+      link:
+        'https://www.youtube.com/watch?v=eHA0WHFUinQ&ab_channel=CodingAcademyPer%C3%BA  ',
+    },
+    {
+      tema: 'Lenguaje de programación ',
+      referencia:
+        'Sergie Arizandieta (2022). Aprende Programación en Assembler. [Archivo de video] Youtube.   ',
+      tipo: 'Video',
+      link:
+        'https://www.youtube.com/watch?v=cFhUA7DnIVo&list=PLON3-BoIoWiV0Te8sxsvXw8u2k3DmBZun&ab_channel=SergieArizandieta  ',
+    },
+    {
+      tema:
+        'Estructura del proceso de creación de un programa para microcontroladores ',
+      referencia:
+        'Electrónica y Circuitos. (2020). BIENVENIDA AL CURSO DE PROGRAMACIÓN DE MICROCONTROLADORES PIC EN LENGUAJE C. [Archivo de video] Youtube.   ',
+      tipo: 'Video',
+      link:
+        'https://www.youtube.com/watch?v=SXl-VD5WU-s&list=PLONPO-iVba9nbY_KTCHt9GGj9dGSj1qYo&ab_channel=Electr%C3%B3nicayCircuitos  ',
+    },
+    {
+      tema:
+        'Estructura del proceso de creación de un programa para microcontroladores ',
+      referencia:
+        'Xataka (2020). ARDUINO: QUÉ ES, CÓMO FUNCIONA y PARA QUÉ se puede UTILIZAR. [Archivo de video] Youtube. ',
+      tipo: 'Video',
+      link: 'https://www.youtube.com/watch?v=Zs9MZosVuqo&ab_channel=Xataka  ',
     },
   ],
   glosario: [
     {
-      termino: 'Término',
-      significado: 'Texto de la definición',
+      termino: 'Código fuente',
+      significado:
+        'texto escrito en lenguaje de programación, que luego se compila para su ejecución en el <em>hardware</em>. ',
     },
     {
-      termino: '<em>Término con extranjerismo</em>',
-      significado: 'Definición',
+      termino: 'Compilación',
+      significado:
+        'proceso de traducción del código fuente en un lenguaje de bajo nivel para que el <em>hardware</em> pueda interpretarlo. ',
+    },
+    {
+      termino: 'Enlazado',
+      significado:
+        'paso en el cual se une el código de bajo nivel con las bibliotecas necesarias para crear un programa ejecutable. ',
+    },
+    {
+      termino: '<em>Firmware</em>',
+      significado:
+        'conjunto de instrucciones específicas que controlan los circuitos electrónicos de un dispositivo. ',
+    },
+    {
+      termino: 'Interprete',
+      significado:
+        'programa que ejecuta el código fuente línea por línea sin necesidad de compilarlo. ',
+    },
+    {
+      termino: 'Lenguaje de programación',
+      significado:
+        'sistema formal de símbolos y reglas usado para escribir instrucciones entendibles por el microcontrolador. ',
+    },
+    {
+      termino: 'Microcontrolador',
+      significado:
+        'dispositivo electrónico que integra procesamiento, almacenamiento y comunicación en una sola unidad. ',
+    },
+    {
+      termino: 'Pruebas de <em>hardware</em>',
+      significado:
+        'evaluaciones que aseguran el funcionamiento correcto de los componentes físicos del microcontrolador. ',
+    },
+    {
+      termino: 'Quemado',
+      significado:
+        'proceso de transferencia del <em>firmware</em> a la memoria del microcontrolador. ',
+    },
+    {
+      termino: 'Simulador',
+      significado:
+        '<em>software</em> que permite verificar virtualmente el funcionamiento de un microcontrolador a partir del código programado. ',
     },
   ],
   referencias: [
     {
-      referencia: '',
+      referencia:
+        'VanSickle, T. (2001). Programming microcontrollers in C. Academic Press.',
+      link: '',
+    },
+    {
+      referencia:
+        'Hyde, R. (2010). The art of assembly language (2nd ed.). No Starch Press. ',
+      link: '',
+    },
+    {
+      referencia:
+        'Barnett, R. H., Cox, S., & O’Cull, L. (2006). Embedded C programming and the Atmel AVR. Delmar Cengage Learning. ',
       link: '',
     },
   ],
@@ -150,8 +231,8 @@ export default {
       titulo: 'CONTENIDO INSTRUCCIONAL',
       autores: [
         {
-          nombre: 'Nombre responsable',
-          cargo: 'Nombre del rol',
+          nombre: 'Paola Alexandra Moya Peralta',
+          cargo: 'Evaluadora instruccional',
           centro: 'Centro de Servicios de Salud - Regional Antioquia',
         },
       ],
@@ -160,18 +241,13 @@ export default {
       titulo: 'DISEÑO Y DESARROLLO DE RECURSOS EDUCATIVOS DIGITALES',
       autores: [
         {
-          nombre: 'Nombre responsable',
-          cargo: 'Diseñador de contenidos',
+          nombre: 'Juan Daniel Polanco Muñoz',
+          cargo: 'Diseñador de contenidos digitales',
           centro: 'Centro de Servicios de Salud - Regional Antioquia',
         },
         {
-          nombre: 'Nombre responsable',
+          nombre: 'Luis Jesús Pérez Madariaga',
           cargo: 'Desarrollador <i>full stack</i>',
-          centro: 'Centro de Servicios de Salud - Regional Antioquia',
-        },
-        {
-          nombre: 'Nombre',
-          cargo: 'Animador y productor audiovisual',
           centro: 'Centro de Servicios de Salud - Regional Antioquia',
         },
       ],
