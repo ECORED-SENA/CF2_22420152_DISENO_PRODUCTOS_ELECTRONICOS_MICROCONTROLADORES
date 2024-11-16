@@ -2,7 +2,7 @@
 
 ## **Enlace GitHubPages**
 
-[https://ecored-sena.github.io/ECORED_TEMPLATE_REPO/](https://ecored-sena.github.io/ECORED_TEMPLATE_REPO/)
+[https://ecored-sena.github.io/CF2_22420152_DISENO_PRODUCTOS_ELECTRONICOS_MICROCONTROLADORES/](https://ecored-sena.github.io/CF2_22420152_DISENO_PRODUCTOS_ELECTRONICOS_MICROCONTROLADORES/)
 
 #
 
