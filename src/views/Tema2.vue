@@ -38,7 +38,7 @@
                 img(src="@/assets/curso/tema1/4.svg")
             .col.ps-2(style="place-self:end;")
               h3.mb-0.mb-lg-2.pe-4 Directivas en lenguaje #[em Assembly]
-        p Las directivas en Assembly son similares a las instrucciones pero no dependen del modelo específico del microcontrolador; representan una característica propia del lenguaje ASM y se utilizan para asignar significados o propósitos a través de variables o registros.
+        p Las directivas en #[em Assembly] son similares a las instrucciones pero no dependen del modelo específico del microcontrolador; representan una característica propia del lenguaje ASM y se utilizan para asignar significados o propósitos a través de variables o registros.
       .col-lg-auto.d-none.d-lg-block(data-aos="fade-left" style="place-self:center;")
         figure
           img(src="@/assets/curso/tema2/2.svg")
@@ -75,7 +75,7 @@
                 img(src='@/assets/curso/tema2/4.svg')
           .row.pt-lg-4.col-xl-10.m-auto
             .col-lg-8.mb-4.mb-lg-0(style="place-self:center;")
-              h4 #[em CONSTANT]
+              h4 CONSTANT
               p.mb-0 Asigna un valor numérico constante.
               p.mb-0 #[strong Sintaxis:] constante &lt;nombre&gt; = &lt;valor&gt;
               p.mb-0 #[strong Ejemplo:] constant MAXIMO = 100
@@ -85,7 +85,7 @@
                 img(src='@/assets/curso/tema2/4.svg')
           .row.pt-lg-4.col-xl-10.m-auto
             .col-lg-8.mb-4.mb-lg-0(style="place-self:center;")
-              h4 #[em VARIABLE]
+              h4 VARIABLE
               p.mb-0 Define un valor numérico variable.
               p.mb-0 #[strong Sintaxis:] variable &lt;nombre&gt; = &lt;valor&gt;
               p.mb-0 #[strong Ejemplo:] variable nivel = 20
@@ -95,7 +95,7 @@
                 img(src='@/assets/curso/tema2/4.svg')
           .row.pt-lg-4.col-xl-10.m-auto
             .col-lg-8.mb-4.mb-lg-0(style="place-self:center;")
-              h4 #[em SET]
+              h4 SET
               p.mb-0 Define variables en ASM y permite redefinirlas.
               p.mb-0 #[strong Sintaxis:] &lt;nombre_variable&gt; set &lt;valor&gt;
               p.mb-0 #[strong Ejemplo:] nivel set 0
@@ -128,7 +128,7 @@
                 img(src='@/assets/curso/tema2/4.svg')
           .row.pt-lg-4.col-xl-10.m-auto
             .col-lg-8.mb-4.mb-lg-0(style="place-self:center;")
-              h4 #[em END]
+              h4 END
               p.mb-0 Marca el final del programa.
               p.mb-0 #[strong Sintaxis:] end
               p.mb-0 #[strong Ejemplo:] movlw 0xFF
@@ -140,7 +140,7 @@
           .row.pt-lg-4.col-xl-10.m-auto
             .col-lg-8.mb-4.mb-lg-0(style="place-self:center;")
               h4 _CONFIG
-              p.mb-0 Ajusta bits de configuración, como el oscilador.
+              p.mb-0 Ajusta #[em bits] de configuración, como el oscilador.
               p.mb-0 #[strong Sintaxis:] _config &lt;termino&gt; o _config &lt;direccion&gt;, &lt;termino&gt;
               p.mb-0 #[strong Ejemplo:] _CONFIG _CP_OFF & _WDT_OFF & _PWRTE_ON & _XT_OSC
             .col-lg-4
@@ -148,7 +148,7 @@
                 img(src='@/assets/curso/tema2/4.svg')
           .row.pt-lg-4.col-xl-10.m-auto
             .col-lg-8.mb-4.mb-lg-0(style="place-self:center;")
-              h4 #[em PROCESSOR]
+              h4 PROCESSOR
               p.mb-0 Define el modelo de microcontrolador.
               p.mb-0 #[strong Sintaxis:] Processor &lt;tipo_microcontrolador&gt;
               p.mb-0 #[strong Ejemplo:] processor 16F84
@@ -170,7 +170,7 @@
           .row.pt-lg-4.col-xl-10.m-auto
             .col-lg-8.mb-4.mb-lg-0(style="place-self:center;")
               h4 DE
-              p.mb-0 Define un byte en la memoria EEPROM.
+              p.mb-0 Define un #[em byte] en la memoria EEPROM.
               p.mb-0 #[strong Ejemplo:] org H'2100'
               p.mb-0 de "Version 1.0", 0
             .col-lg-4
@@ -188,14 +188,14 @@
     .cont_titulo_3.mt-5.mb-4.p-1.ps-3.pe-3(data-aos="fade-right")
       h4.mb-0 Directivas de configuración
     
-    p(data-aos="fade-up") Las directivas de configuración en #[em Assembly] permiten ajustar parámetros esenciales del programa, como la configuración de bits, el modelo de microcontrolador, y la definición de bloques de datos o condiciones de ejecución, optimizando el control y funcionalidad del código.
+    p(data-aos="fade-up") Las directivas de configuración en #[em Assembly] permiten ajustar parámetros esenciales del programa, como la configuración de #[em bits], el modelo de microcontrolador, y la definición de bloques de datos o condiciones de ejecución, optimizando el control y funcionalidad del código.
 
     .col-xl-10.m-auto.mt-5
       .row
         .col-lg(data-aos="fade-right")
           LineaTiempoD.color-secundario
             div.text-small(numero="1" titulo="_CONFIG") 
-              p.mb-0 Ajusta bits de configuración, como el oscilador.
+              p.mb-0 Ajusta #[em bits] de configuración, como el oscilador.
               p.mb-0 #[strong Sintaxis:] _config &lt;termino&gt; o _config &lt;direccion&gt;, &lt;termino&gt;
               p.mb-0 #[strong Ejemplo:] _CONFIG _CP_OFF & _WDT_OFF & _PWRTE_ON & _XT_OSC
             div.text-small(numero="2" titulo="PROCESSOR") 
@@ -207,10 +207,10 @@
               p.mb-0 #[strong Sintaxis:] Cblock [ &lt;termino&gt;]  &lt;etiqueta&gt; [: &lt;incremento&gt;],  &lt;etiqueta&gt; [: &lt;incremento&gt;] endc
               p.mb-0 #[strong Ejemplo:] Cblock 0x02 primero, segundo, tercero Endc
             div.text-small(numero="4" titulo="DB") 
-              p.mb-0 Define un byte de datos.
+              p.mb-0 Define un #[em byte] de datos.
               p.mb-0 #[strong Ejemplo:] db 't', 0x0f, 'e', 's', 0x12
             div.text-small(numero="5" titulo="DE") 
-              p.mb-0 Define un byte en la memoria EEPROM.
+              p.mb-0 Define un #[em byte] en la memoria EEPROM.
               p.mb-0 #[strong Ejemplo:] org H'2100' de "Version 1.0", 0
         .col-lg-auto.d-none.d-lg-block(data-aos="fade-left")
           figure
@@ -235,7 +235,7 @@
               p.mb-0 Ejecuta el código si una definición existe (IFDEF) o no (IFNDEF).
               p.mb-0 #[strong Ejemplo:] #define prueba Ifdef prueba ... endif
             div.text-small(numero="10" titulo="Operadores Matemáticos") 
-              p.mb-0 Incluyen +, -, *, /, % y operadores bit a bit como &, `
+              p.mb-0 Incluyen +, -, *, /, % y operadores #[em bit] a #[em bit] como &, `
     
     .cont_titulo_3.mt-5.mb-4.p-1.ps-3.pe-3(data-aos="fade-right")
       h4.mb-0 Instrucciones de condición
@@ -266,7 +266,7 @@
       .cont_titulo_3.mt-5.mb-4.p-1.ps-3.pe-3(data-aos="fade-right")
         h4.mb-0 Operadores matemáticos
     
-      p(data-aos="fade-up") Los operadores matemáticos en #[em Assembly] permiten realizar cálculos aritméticos y lógicos en el programa, proporcionando una variedad de operaciones como suma, multiplicación, desplazamientos de bits y comparaciones, esenciales para manipular y evaluar datos de manera precisa en el código.
+      p(data-aos="fade-up") Los operadores matemáticos en #[em Assembly] permiten realizar cálculos aritméticos y lógicos en el programa, proporcionando una variedad de operaciones como suma, multiplicación, desplazamientos de #[em bits] y comparaciones, esenciales para manipular y evaluar datos de manera precisa en el código.
 
       .col-xl-10.m-auto.mt-5
         .titulo-sexto.color-acento-contenido(data-aos="zoom-in-down")
@@ -306,11 +306,11 @@
                 td -1 * Length 
               tr
                 td.fw-bold high 
-                td Devuelve el byte más alto 
+                td Devuelve el #[em byte] más alto 
                 td movlw high CTR_Table 
               tr
                 td.fw-bold low 
-                td Devuelve el byte más inferior 
+                td Devuelve el #[em byte] más inferior 
                 td movlw low CTR_Table 
               tr
                 td.fw-bold *
@@ -366,19 +366,19 @@
                 td if entry_idx != num_entries 
               tr
                 td.fw-bold &
-                td Operación AND en los bits 
+                td Operación AND en los #[em bits] 
                 td flags = flags & ERROR_BIT 
               tr
                 td.fw-bold ^ 
-                td Exclusivo OR en los bits 
+                td Exclusivo OR en los #[em bits] 
                 td flags = flags ^ ERROR_BIT 
               tr
                 td.fw-bold ` 
                 td ` 
-                td Lógica OR sobre bits 
+                td Lógica OR sobre #[em bits] 
               tr
                 td.fw-bold &&
-                td Lógica OR sobre bits (if) 
+                td Lógica OR sobre #[em bits] (if) 
                 td if (len ==512) && (b ==c) 
               tr
                 td.fw-bold =
@@ -439,7 +439,7 @@
           figure
             img(src="@/assets/curso/tema2/9.png")
 
-    p.mt-5(data-aos="fade-up") Este ejemplo imprime "Hola Mundo" en DOS usando lenguaje Assembly.
+    p.mt-5(data-aos="fade-up") Este ejemplo imprime "Hola Mundo" en DOS usando lenguaje #[em Assembly].
           
 
 

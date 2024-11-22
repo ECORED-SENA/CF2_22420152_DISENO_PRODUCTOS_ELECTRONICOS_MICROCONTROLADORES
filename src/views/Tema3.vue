@@ -50,7 +50,7 @@
                 img(src="@/assets/curso/tema3/5.svg")
             .col-md(style="place-self:center;")
               p.mb-0 Para probar el programa sin emplear físicamente un recurso electrónico, se pueden utilizar herramientas tecnológicas, ya sean de #[em software] o #[em hardware], que permitan verificar si la aplicación funciona correctamente; estas herramientas se denominan #[strong simuladores].
-        p.mt-4 Un simulador es un #[strong software] capaz de reproducir virtualmente el comportamiento real de un microcontrolador a partir del código .asm creado. Existen diferentes simuladores en el mercado que permiten desarrollar diseños complejos para programar microcontroladores, como los siguientes:
+        p.mt-4 Un simulador es un #[strong #[em software]] capaz de reproducir virtualmente el comportamiento real de un microcontrolador a partir del código .asm creado. Existen diferentes simuladores en el mercado que permiten desarrollar diseños complejos para programar microcontroladores, como los siguientes:
         .row.mt-4
           .col-md.mb-4.mb-md-0
             .h-100.p-4(style="background-color:#D7E9FF;")
@@ -80,7 +80,7 @@
           img(src="@/assets/curso/tema3/7.svg")
       .col-lg(data-aos="fade-left")
         .p-4.h-100.d-flex.align-content-center.flex-wrap(style="background-color:#D4F0E0;")
-          p.mb-0 El #[strong firmware] funciona como un bloque de instrucciones con las órdenes específicas de lo que se quiere ejecutar (por ejemplo, la activación de una alarma sonora). Este bloque establece la lógica de bajo nivel que controla los circuitos electrónicos del dispositivo. Funcionalmente, el #[strong firmware] es el intermediario entre las órdenes externas que recibe el dispositivo y su electrónica, permitiendo la correcta ejecución de estas órdenes.
+          p.mb-0 El #[strong #[em firmware]] funciona como un bloque de instrucciones con las órdenes específicas de lo que se quiere ejecutar (por ejemplo, la activación de una alarma sonora). Este bloque establece la lógica de bajo nivel que controla los circuitos electrónicos del dispositivo. Funcionalmente, el #[strong #[em firmware]] es el intermediario entre las órdenes externas que recibe el dispositivo y su electrónica, permitiendo la correcta ejecución de estas órdenes.
     
     .cont_decorativo.mb-4.mt-5(data-aos="fade-right")
       .row
